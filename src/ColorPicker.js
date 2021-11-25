@@ -59,15 +59,6 @@ const ColorPicker = ({
           size={size * (5 / 6)}
           setColor={setColorFromWheel}
         />
-        <div className="pickedColorContainer">
-          <div
-            className="pickedColor"
-            style={{
-              backgroundColor: pickedColor.hex,
-            }}
-          >
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -89,7 +80,7 @@ ColorPicker.propTypes = {
 ColorPicker.defaultProps = {
   size: 100,
   initialColor: '#FF0000',
-  onChange: (() => {}),
+  onChange: (() => { }),
 };
 
 export default ColorPicker;
