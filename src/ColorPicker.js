@@ -59,6 +59,15 @@ const ColorPicker = ({
           size={size * (5 / 6)}
           setColor={setColorFromWheel}
         />
+        <div className="pickedColorContainer">
+          <div
+            className="pickedColor"
+            style={{
+              backgroundColor: pickedColor.hex,
+            }}
+          >
+          </div>
+        </div>
       </div>
     </div>
   );
