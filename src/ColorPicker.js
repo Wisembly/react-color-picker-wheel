@@ -10,6 +10,8 @@ const ColorPicker = ({
   size,
   initialColor,
   onChange,
+  brightnessBar,
+  shadesBar,
 }) => {
   const [pickedColor, setPickedColor] = useState({
     hex: '#FF0000',
@@ -58,6 +60,8 @@ const ColorPicker = ({
           color={pickedColor.hsl}
           size={size * (5 / 6)}
           setColor={setColorFromWheel}
+          brightnessBar={brightnessBar}
+          shadesBar={shadesBar}
         />
       </div>
     </div>
@@ -75,12 +79,17 @@ ColorPicker.propTypes = {
   ]),
   /** Function which will be called when color change occurs. Parameter is a hsl object */
   onChange: PropTypes.func,
+  brightnessBar: PropTypes.bool,
+  shadesBar: PropTypes.bool,
+
 };
 
 ColorPicker.defaultProps = {
   size: 100,
   initialColor: '#FF0000',
   onChange: (() => { }),
+  brightnessBar: true,
+  shadesBar: true,
 };
 
 export default ColorPicker;
