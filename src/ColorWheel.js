@@ -15,8 +15,6 @@ const ColorWheel = ({
 }) => {
   const wheel = useRef(null);
   const [editing, setEditing] = useState(false);
-  console.log(shadesBar);
-  console.log(brightnessBar);
 
   useEffect(() => {
     const mouseDown = event => {
