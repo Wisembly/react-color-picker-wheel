@@ -24,7 +24,6 @@
 
 .handle{
   border-radius: 100%;
-  background-color: white;
   position: absolute;
   transform: translate(-50%, -50%);
 }
