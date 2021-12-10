@@ -1,7 +1,6 @@
 .colorWheel{
   display: flex;
   position: relative;
-  margin:auto;
   height: 100%;
 }
 
