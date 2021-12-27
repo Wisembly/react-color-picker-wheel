@@ -9,8 +9,6 @@
 .barBackground{
     height: 90%;
     width: 100%;
-    mask-image: url('../assets/mask.svg');
-    -webkit-mask-image: url('../assets/mask.svg');
     mask-size: contain;
     -webkit-mask-size: contain;
 }
