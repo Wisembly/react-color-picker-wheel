@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import './styles/LevelBar.css';
 
 const LevelBar = ({
-  alignRight,
   className,
   handleClassName,
   size,
@@ -60,7 +59,6 @@ const LevelBar = ({
         position: 'absolute',
         height: size,
         width: size * 0.281,
-        transform: alignRight ? 'scaleX(-1)' : '',
         cursor: 'grab',
       }}
     >
@@ -86,8 +84,6 @@ const LevelBar = ({
 };
 
 LevelBar.propTypes = {
-  /** Whether bar is aligned to right */
-  alignRight: PropTypes.bool,
   /** Css class name for outer div */
   className: PropTypes.string,
   /** Css class name for handle */
@@ -103,7 +99,6 @@ LevelBar.propTypes = {
 };
 
 LevelBar.defaultProps = {
-  alignRight: false,
   className: 'levelBar',
   handleClassName: 'defaultHandle',
   background: 'black',

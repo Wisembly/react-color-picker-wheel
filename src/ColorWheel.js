@@ -89,7 +89,6 @@ const ColorWheel = ({
       </div>
       {brightnessBar && (
         <LevelBar
-          alignRight
           className="lightnessBar"
           size={size}
           background={`linear-gradient(white,hsl(${color.h},${color.s}%,50%), black)`}
