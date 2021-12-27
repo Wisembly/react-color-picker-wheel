@@ -66,7 +66,6 @@ const ColorWheel = ({
           size={size}
           background={`linear-gradient(hsl(${color.h},100%,${color.l}%),hsl(${color.h},0%,${color.l}%))`}
           onChange={saturation => setColor({ s: saturation })}
-          value={color.s}
         />
       )}
       <div
@@ -93,7 +92,6 @@ const ColorWheel = ({
           size={size}
           background={`linear-gradient(white,hsl(${color.h},${color.s}%,50%), black)`}
           onChange={lightness => setColor({ l: lightness })}
-          value={color.l}
         />
       )}
     </div>

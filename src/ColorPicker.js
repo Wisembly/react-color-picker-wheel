@@ -81,7 +81,6 @@ ColorPicker.propTypes = {
   onChange: PropTypes.func,
   brightnessBar: PropTypes.bool,
   shadesBar: PropTypes.bool,
-
 };
 
 ColorPicker.defaultProps = {

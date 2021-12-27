@@ -1,6 +1,5 @@
 import React, {
   useEffect,
-  useMemo,
   useRef,
   useState,
 } from 'react';
@@ -13,7 +12,6 @@ const LevelBar = ({
   size,
   background,
   onChange,
-  value,
 }) => {
   const bar = useRef(null);
   const [editing, setEditing] = useState(false);
@@ -45,12 +43,6 @@ const LevelBar = ({
     };
   }, [editing, onChange, size]);
 
-  const indicatorPosition = useMemo(() => {
-    const top = size * (0.6 * (1 - Math.sin(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
-    const horizontal = size * 0.65 * (1 - Math.cos(Math.asin(3 / 4) * (value / 50 - 1)));
-    return { top, horizontal };
-  }, [value, size]);
-
   return (
     <div
       ref={bar}
@@ -72,8 +64,6 @@ const LevelBar = ({
       <div
         className={handleClassName}
         style={{
-          top: indicatorPosition.top,
-          left: indicatorPosition.horizontal,
           width: size * 0.05,
           height: size * 0.05,
           border: `${size * 0.005}px solid black`,
@@ -95,7 +85,6 @@ LevelBar.propTypes = {
   /** zero saturation color string in css hsl format (hsl(0, 5%, 10%)). */
   onChange: PropTypes.func,
   /** current value level ([0,100]) */
-  value: PropTypes.number,
 };
 
 LevelBar.defaultProps = {
@@ -103,6 +92,5 @@ LevelBar.defaultProps = {
   handleClassName: 'defaultHandle',
   background: 'black',
   onChange: (() => {}),
-  value: 100,
 };
 export default LevelBar;

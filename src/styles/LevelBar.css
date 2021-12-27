@@ -9,6 +9,4 @@
 .barBackground{
     height: 90%;
     width: 100%;
-    mask-size: contain;
-    -webkit-mask-size: contain;
 }
