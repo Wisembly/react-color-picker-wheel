@@ -57,9 +57,11 @@ const LevelBar = ({
       ref={bar}
       className={className}
       style={{
+        marginRight: alignRight ? '' : '15px',
+        marginLeft: alignRight ? '15px' : '',
         position: 'absolute',
         height: size,
-        width: size * 0.281,
+        width: '15px',
         transform: alignRight ? 'scaleX(-1)' : '',
         cursor: 'grab',
       }}
