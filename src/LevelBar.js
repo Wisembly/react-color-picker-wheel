@@ -48,7 +48,7 @@ const LevelBar = ({
 
   const indicatorPosition = useMemo(() => {
     const top = size * (0.6 * (1 - Math.sin(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
-    const horizontal = size;
+    const horizontal = size * (0.65 * (1 - Math.cos(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
     return { top, horizontal };
   }, [value, size]);
 
