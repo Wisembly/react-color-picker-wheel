@@ -33,7 +33,7 @@
 .saturationBar-level{
   height: 20px;
   width: 20px;
-  border-radius: 100%;
+  border-radius: 99px;
   background-color: black;
 }
 
@@ -44,7 +44,7 @@
 .lightnessBar-level{
   height: 20px;
   width: 20px;
-  border-radius: 100%;
+  border-radius: 99px;
   background-color: black;
 }
 

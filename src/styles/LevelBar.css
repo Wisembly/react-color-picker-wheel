@@ -1,8 +1,7 @@
 .defaultHandle{
     position: absolute;
     box-sizing: border-box;
-    background-color: white;
-    border-radius: 100%;
+    border-radius: 99px;
 }
 
 .barBackground{

@@ -15,6 +15,7 @@ const LevelBar = ({
   background,
   onChange,
   value,
+  color,
 }) => {
   const bar = useRef(null);
   const [editing, setEditing] = useState(false);
@@ -74,6 +75,7 @@ const LevelBar = ({
         className={handleClassName}
         style={{
           top: indicatorPosition.top,
+          backgroundColor: color,
           left: 0,
           width: 15,
           height: 5,
@@ -99,6 +101,8 @@ LevelBar.propTypes = {
   onChange: PropTypes.func,
   /** current value level ([0,100]) */
   value: PropTypes.number,
+  /** current color in hexa */
+  color: PropTypes.number,
 };
 
 LevelBar.defaultProps = {
@@ -108,5 +112,6 @@ LevelBar.defaultProps = {
   background: 'black',
   onChange: (() => {}),
   value: 100,
+  color: 0,
 };
 export default LevelBar;
