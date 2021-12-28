@@ -77,8 +77,8 @@ const LevelBar = ({
           top: indicatorPosition.top,
           backgroundColor: color,
           left: 0,
-          width: 15,
-          height: 5,
+          width: 17,
+          height: 8,
           border: '2px solid white',
         }}
       />
