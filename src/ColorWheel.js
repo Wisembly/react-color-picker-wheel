@@ -72,6 +72,10 @@ const ColorWheel = ({
       )}
       <div
         ref={wheel}
+        style={{
+          width: size,
+          height: size,
+        }}
         className="wheel"
         onMouseDown={onMouseDown}
         role="button"
