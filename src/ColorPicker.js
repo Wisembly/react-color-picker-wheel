@@ -52,7 +52,7 @@ const ColorPicker = ({
       <div
         className="outerContainer"
         style={{
-          height: size,
+          height: size + brightnessBar ? 30 : 0,
           width: size,
         }}
       >
