@@ -48,8 +48,7 @@ const LevelBar = ({
 
   const indicatorPosition = useMemo(() => {
     const top = size * (0.6 * (1 - Math.sin(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
-    const horizontal = size * (0.65 * (1 - Math.cos(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
-    return { top, horizontal };
+    return { top };
   }, [value, size]);
 
   return (
@@ -75,7 +74,7 @@ const LevelBar = ({
         className={handleClassName}
         style={{
           top: indicatorPosition.top,
-          left: indicatorPosition.horizontal,
+          left: size + 30,
           width: size * 0.05,
           height: size * 0.05,
           border: `${size * 0.005}px solid black`,
