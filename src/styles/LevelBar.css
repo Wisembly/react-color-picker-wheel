@@ -2,10 +2,10 @@
     position: absolute;
     box-sizing: border-box;
     border-radius: 99px;
+    transform: translate(0,-50%);
 }
 
 .barBackground{
-    height: 95%;
+    height: 93%;
     width: 100%;
-    border-radius: 5px;
 }
