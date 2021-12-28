@@ -74,10 +74,10 @@ const LevelBar = ({
         className={handleClassName}
         style={{
           top: indicatorPosition.top,
-          left: size + 30,
-          width: size * 0.05,
-          height: size * 0.05,
-          border: `${size * 0.005}px solid black`,
+          left: 0,
+          width: 15,
+          height: 5,
+          border: '2px solid white',
         }}
       />
     </div>
