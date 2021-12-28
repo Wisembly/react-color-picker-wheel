@@ -53,7 +53,7 @@ const ColorPicker = ({
         className="outerContainer"
         style={{
           height: size,
-          width: (brightnessBar ? size + 15 : size),
+          width: (brightnessBar ? size + 30 : size),
         }}
       >
         <ColorWheel
