@@ -9,6 +9,7 @@
 .wheel{
   cursor: pointer;
   z-index: 1;
+  flex: none;
   position: relative;
   border-radius: 100%;
   outline: none;

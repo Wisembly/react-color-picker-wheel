@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.pickedColorContainer{
+  flex: 1;
+}
+
 .pickedColor{
   border: 1px solid black;
   display: flex;
